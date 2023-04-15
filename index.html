@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>偏差値計算</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="sanitize.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>度数分布表と自分の点数から自分の偏差値を求めます。(100点満点のテスト)（度数は自分の点数を含まずに入力してください）</h3>
+        <table>
+            <tr>
+                <th></th>
+                <th>人数</th>
+            </tr>
+            <tr>
+                <th>1点以上10点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>10点以上20点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>20点以上30点未満</th>
+                <td >
+                    <input type="number" value="2" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>30点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>40点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>50点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>60点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>70点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>80点以上40点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>90点以上101点未満</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>自分の点数</th>
+                <td >
+                    <input type="number" value="1" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>合計</th>
+                <td class="otherV"></td>
+            </tr>
+            <tr>
+                <th>平均点(任意)</th>
+                <td >
+                    <input type="number" value="" class="c" min="0">
+                </td>
+            </tr>
+            <tr>
+                <th>標準偏差</th>
+                <td class="otherV"></td>
+            </tr>
+            <tr>
+                <th>偏差値</th>
+                <td class="otherV"></td>
+            </tr>
+            <button onclick="conputation()">計算</button>
+            <br>
+            
+        </table>
+        <script src="javascript.js"></script>
+        </div>
+    </body>
+</html>
